@@ -13,11 +13,11 @@
                             style="grid-column: 2; justify-self: center"
                             >Word</span
                         >
-                        <span
+                        <!-- <span
                             class="text-sm text-lowercase text-info"
                             style="grid-column: 3; justify-self: end"
                             >321</span
-                        >
+                        > -->
                     </div>
 
                     <div class="flex flex-center q-mt-md q-gutter-x-sm">
