@@ -39,7 +39,7 @@ const onReset = () => {
     <q-page class="q-ma-sm">
         <section
             class="column text-center items-center q-pa-lg bg-dark q-mx-auto"
-            style="max-width: 30rem; margin-top: 10rem; border-radius: 0.75rem"
+            style="max-width: 30rem; margin-top: 8rem; border-radius: 0.75rem"
         >
             <span content class="col-2 text-h4" style="grid-column: 2; justify-self: center"
                 >Sign Up</span
