@@ -47,10 +47,7 @@
                 </q-card>
 
                 <div class="column items-center">
-                    <p
-                        class="text-h5 q-mt-lg full-width"
-                        style="max-width: 36.25rem; font-weight: 300"
-                    >
+                    <p class="text-h5 q-mt-lg full-width" style="max-width: 36.25rem">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
 

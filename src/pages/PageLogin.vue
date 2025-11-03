@@ -38,10 +38,7 @@ const onReset = () => {
             class="column text-center items-center q-pa-lg bg-dark q-mx-auto"
             style="max-width: 30rem; margin-top: 10rem; border-radius: 0.75rem"
         >
-            <span
-                content
-                class="col-2 text-h3"
-                style="grid-column: 2; justify-self: center; font-weight: 300"
+            <span content class="col-2 text-h3" style="grid-column: 2; justify-self: center"
                 >Login</span
             >
 
@@ -78,7 +75,7 @@ const onReset = () => {
                         color="secondary"
                         style="width: 17.1875rem; opacity: 75%; border-radius: 0.375rem"
                         size="lg"
-                        >Log in
+                        >Login
                     </q-btn>
                 </div>
 
@@ -86,17 +83,13 @@ const onReset = () => {
                     <RouterLink
                         class="text-h6"
                         :to="{ name: 'forgot-password' }"
-                        style="width: 110px; font-weight: 300"
+                        style="width: 110px"
                     >
                         Forgot</RouterLink
                     >
-                    <RouterLink
-                        class="text-h6"
-                        :to="{ name: 'sign-up' }"
-                        style="width: 110px; font-weight: 300"
-                    >
-                        Register</RouterLink
-                    >
+                    <RouterLink class="text-h6" :to="{ name: 'sign-up' }" style="width: 110px">
+                        Sign Up
+                    </RouterLink>
                 </div>
             </q-form>
         </section>
