@@ -7,7 +7,7 @@
     "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"],
     "typescript.tsdk": "node_modules/typescript/lib",
     "files.exclude": {
-        "**/.git": false,
+        "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
         "**/.DS_Store": true,

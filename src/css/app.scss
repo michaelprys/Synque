@@ -1,1 +1,77 @@
 // app global css in SCSS form
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.q-field__bottom--animated {
+    transform: translateY(0%);
+    position: static;
+    padding-bottom: 1rem;
+}
+
+.q-field--with-bottom {
+    padding-bottom: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    background-color: $dark-page;
+}
+
+.sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+input[type='number'] {
+    appearance: textfield;
+}
+
+.skeleton {
+    position: absolute;
+    inset: 0;
+    background-color: $info;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 150ms ease-in-out;
+}
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}

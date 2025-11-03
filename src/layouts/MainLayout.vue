@@ -1,19 +1,82 @@
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const model = ref(null);
+
+const stringOptions = ['Mandarin', 'Cantonese', 'Spanish', 'English', 'Czech'];
+
+const options = ref([...stringOptions]);
+</script>
+
 <template>
     <q-layout view="lHh Lpr lFf">
-        <q-header elevated>
-            <q-toolbar> </q-toolbar>
-        </q-header>
+        <div>
+            <div class="q-mx-auto" style="max-width: 920px">
+                <q-header class="bg-primary" elevated>
+                    <q-toolbar class="text-h6 justify-between q-mx-auto" style="max-width: 90rem">
+                        <div class="flex items-center">
+                            <q-btn to="/" flat dense>
+                                <img src="~assets/synque-logo.png" width="32" height="32" />
+                            </q-btn>
 
-        <q-drawer show-if-above bordered>
-            <q-list>
-                <q-item-label header> Essential Links </q-item-label>
-            </q-list>
-        </q-drawer>
+                            <ul class="flex items-center q-ml-md">
+                                <li>
+                                    <q-btn to="/" flat color="info">Add</q-btn>
+                                </li>
+                                <li>
+                                    <q-btn to="/" flat color="info">Words</q-btn>
+                                </li>
+                                <li>
+                                    <q-select
+                                        v-model="model"
+                                        class="text-uppercase q-ml-md"
+                                        dark
+                                        label="language"
+                                        label-color="info"
+                                        color="info"
+                                        borderless
+                                        :options="options"
+                                        style="width: 140px"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
 
-        <q-page-container>
-            <router-view />
-        </q-page-container>
+                        <div class="flex items-center q-gutter-x-sm">
+                            <q-btn to="/" icon="account_circle" color="info" dense flat />
+
+                            <q-btn icon="settings" dense flat color="info"> </q-btn>
+                        </div>
+                        <!-- <div>
+                        <q-btn icon="menu" flat round />
+                    </div> -->
+                    </q-toolbar>
+                </q-header>
+
+                <q-page-container style="padding-top: 5.5rem">
+                    <router-view />
+                </q-page-container>
+            </div>
+
+            <footer class="bg-primary flex justify-end" style="width: 100%" elevated>
+                <ul class="flex q-pa-sm q-gutter-x-md">
+                    <li>
+                        <q-btn class="q-px-md" to="/" flat color="info" padding="xs">About</q-btn>
+                    </li>
+                    <li>
+                        <q-btn class="q-px-md" to="/" flat color="info" padding="xs">Terms</q-btn>
+                    </li>
+                    <li>
+                        <q-btn class="q-px-md" to="/" flat color="info" padding="xs">Privacy</q-btn>
+                    </li>
+                </ul>
+            </footer>
+        </div>
     </q-layout>
 </template>
 
-<script setup lang="ts"></script>
+<style lang="scss" scoped>
+.q-field__native span {
+    color: $negative;
+}
+</style>
