@@ -47,7 +47,10 @@
                 </q-card>
 
                 <div class="column items-center">
-                    <p class="text-h5 q-mt-lg full-width" style="max-width: 580px">
+                    <p
+                        class="text-h5 q-mt-lg full-width"
+                        style="max-width: 36.25rem; font-weight: 300"
+                    >
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
 
@@ -67,8 +70,8 @@
                         color="secondary"
                         style="opacity: 75%; width: 140px; border-radius: 0.375rem"
                         size="lg"
-                        >I Know</q-btn
-                    >
+                        >I Know
+                    </q-btn>
                     <q-btn
                         color="secondary"
                         style="opacity: 75%; width: 140px; border-radius: 0.375rem"

@@ -11,7 +11,7 @@ const options = ref([...stringOptions]);
 <template>
     <q-layout view="lHh Lpr lFf">
         <div>
-            <div class="q-mx-auto" style="max-width: 920px">
+            <div class="q-mx-auto" style="max-width: 57.5rem">
                 <q-header class="bg-primary" elevated>
                     <q-toolbar class="text-h6 justify-between q-mx-auto" style="max-width: 90rem">
                         <div class="flex items-center">
@@ -21,10 +21,10 @@ const options = ref([...stringOptions]);
 
                             <ul class="flex items-center q-ml-md">
                                 <li>
-                                    <q-btn to="/" flat color="info">Add</q-btn>
+                                    <q-btn to="/" flat color="info">Words</q-btn>
                                 </li>
                                 <li>
-                                    <q-btn to="/" flat color="info">Words</q-btn>
+                                    <q-btn to="/" flat color="info">Instructions</q-btn>
                                 </li>
                                 <li>
                                     <q-select
@@ -43,7 +43,13 @@ const options = ref([...stringOptions]);
                         </div>
 
                         <div class="flex items-center q-gutter-x-sm">
-                            <q-btn to="/" icon="account_circle" color="info" dense flat />
+                            <q-btn
+                                :to="{ name: 'login' }"
+                                icon="account_circle"
+                                color="info"
+                                dense
+                                flat
+                            />
 
                             <q-btn icon="settings" dense flat color="info"> </q-btn>
                         </div>
@@ -55,6 +61,11 @@ const options = ref([...stringOptions]);
 
                 <q-page-container style="padding-top: 5.5rem">
                     <router-view />
+                    <!-- <router-view v-slot="{ Component }">
+                        <transition name="fade" mode="out-in">
+                            <component :is="Component" />
+                        </transition>
+                    </router-view> -->
                 </q-page-container>
             </div>
 

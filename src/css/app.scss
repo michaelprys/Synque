@@ -1,5 +1,35 @@
 // app global css in SCSS form
 
+@font-face {
+    font-family: 'Metropolis';
+    src:
+        url('../src/css/fonts/Metropolis-Bold.woff2') format('woff2'),
+        url('../src/css/fonts/Metropolis-Bold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src:
+        url('../src/css/fonts/Metropolis-Regular.woff2') format('woff2'),
+        url('../src/css/fonts/Metropolis-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src:
+        url('../src/css/fonts/Metropolis-Light.woff2') format('woff2'),
+        url('../src/css/fonts/Metropolis-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 body,
 h1,
 h2,
@@ -28,7 +58,7 @@ a {
 .q-field__bottom--animated {
     transform: translateY(0%);
     position: static;
-    padding-bottom: 1rem;
+    padding-bottom: 16px;
 }
 
 .q-field--with-bottom {
@@ -42,19 +72,20 @@ input::-webkit-inner-spin-button {
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Metropolis, Calibri;
     color: #fff;
+    font-weight: 300;
     background-color: $dark-page;
 }
 
 .sr-only {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
-    height: 1px;
+    height: 0.0625rem;
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
-    width: 1px;
+    width: 0.0625rem;
 }
 
 input[type='number'] {
