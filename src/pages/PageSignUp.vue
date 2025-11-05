@@ -39,13 +39,13 @@ const onReset = () => {
     <q-page class="q-ma-sm">
         <section
             class="column text-center items-center q-pa-lg bg-dark q-mx-auto"
-            style="max-width: 30rem; margin-top: 8rem; border-radius: 0.75rem"
+            style="max-width: 30rem; margin-top: 9rem; border-radius: 0.75rem"
         >
             <span content class="col-2 text-h4" style="grid-column: 2; justify-self: center"
                 >Sign Up</span
             >
 
-            <q-form class="q-mt-xl full-width" @submit="onSubmit" @reset="onReset">
+            <q-form class="q-mt-lg full-width" @submit="onSubmit" @reset="onReset">
                 <div class="column">
                     <q-input v-model="email" standout type="email" dark label="Email">
                         <template #prepend>
@@ -109,8 +109,10 @@ const onReset = () => {
                     </q-btn>
                 </div>
 
-                <div class="flex q-mt-xl flex-center">
-                    <RouterLink class="text-h6" :to="{ name: 'login' }"> Back to Login </RouterLink>
+                <div class="flex q-mt-lg flex-center">
+                    <RouterLink class="text-subtitle1" :to="{ name: 'login' }">
+                        Back to Login
+                    </RouterLink>
                 </div>
             </q-form>
         </section>

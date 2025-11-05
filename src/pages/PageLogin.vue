@@ -36,13 +36,13 @@ const onReset = () => {
     <q-page class="q-ma-sm">
         <section
             class="column text-center items-center q-pa-lg bg-dark q-mx-auto"
-            style="max-width: 30rem; margin-top: 10rem; border-radius: 0.75rem"
+            style="max-width: 30rem; margin-top: 13rem; border-radius: 0.75rem"
         >
             <span content class="col-2 text-h4" style="grid-column: 2; justify-self: center"
                 >Login</span
             >
 
-            <q-form class="q-mt-xl full-width" @submit="onSubmit" @reset="onReset">
+            <q-form class="q-mt-lg full-width" @submit="onSubmit" @reset="onReset">
                 <q-input v-model="email" standout type="email" dark label="Email">
                     <template #prepend>
                         <q-icon name="mail" />
@@ -70,7 +70,7 @@ const onReset = () => {
                     </template>
                 </q-input>
 
-                <div class="q-mt-xl">
+                <div class="q-mt-lg">
                     <q-btn
                         color="secondary"
                         style="width: 17.1875rem; opacity: 75%; border-radius: 0.375rem"
@@ -79,15 +79,19 @@ const onReset = () => {
                     </q-btn>
                 </div>
 
-                <div class="flex q-mt-xl flex-center">
+                <div class="flex q-mt-lg flex-center">
                     <RouterLink
-                        class="text-h6"
+                        class="text-subtitle1"
                         :to="{ name: 'forgot-password' }"
                         style="width: 110px"
                     >
                         Forgot</RouterLink
                     >
-                    <RouterLink class="text-h6" :to="{ name: 'sign-up' }" style="width: 110px">
+                    <RouterLink
+                        class="text-subtitle1"
+                        :to="{ name: 'sign-up' }"
+                        style="width: 110px"
+                    >
                         Sign Up
                     </RouterLink>
                 </div>

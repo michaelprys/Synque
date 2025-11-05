@@ -40,7 +40,7 @@ const onReset = () => {
                 >Reset Password</span
             >
 
-            <q-form class="q-mt-xl full-width" @submit="onSubmit" @reset="onReset">
+            <q-form class="q-mt-lg full-width" @submit="onSubmit" @reset="onReset">
                 <div class="column">
                     <q-input
                         v-model="email"
@@ -65,8 +65,10 @@ const onReset = () => {
                     </q-btn>
                 </div>
 
-                <div class="flex q-mt-xl flex-center">
-                    <RouterLink class="text-h6" :to="{ name: 'login' }"> Back to Login </RouterLink>
+                <div class="flex q-mt-lg flex-center">
+                    <RouterLink class="text-subtitle1" :to="{ name: 'login' }">
+                        Back to Login
+                    </RouterLink>
                 </div>
             </q-form>
         </section>
